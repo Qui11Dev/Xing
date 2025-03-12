@@ -201,7 +201,7 @@ namespace Xing
                 .Replace("{toLang}", toLang)
                 .Replace("{text}", text);
 
-            var client = new GeminiClient("AIzaSyDiBsgMGVEM6dPxYcEcuU9BTCg-In14AGA");
+            var client = new GeminiClient("YOUR API HERE");
 
             var response = await client.GenerateContentAsync(
                 modelId: "gemini-1.5-flash-latest",
@@ -232,7 +232,7 @@ namespace Xing
             string defaultPrompt = document.RootElement.GetProperty("transcribe_prompt").GetString();
             byte[] audioBytes = await File.ReadAllBytesAsync(path);
 
-            var client = new GeminiClient("AIzaSyDiBsgMGVEM6dPxYcEcuU9BTCg-In14AGA");
+            var client = new GeminiClient("YOUR API HERE");
 
             var response = await client.GenerateContentAsync(
                 modelId: "gemini-1.5-flash-latest",
