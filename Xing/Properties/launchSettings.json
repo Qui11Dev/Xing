@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Xing (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Xing (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
